@@ -35,6 +35,12 @@ public class UserLifecycleTest {
         RestAssured.baseURI =
                 "https://apps.qualiadept.eu/hapifyme/api";
 
+        password = System.getenv("TEST_PASSWORD");
+
+        if (password == null || password.isEmpty()) {
+            throw new RuntimeException("TEST_PASSWORD environment variable is not set.");
+        }
+
         firstName = DataGenerator.generateFirstName();
         lastName = DataGenerator.generateLastName();
         email = DataGenerator.generateEmail();
@@ -42,6 +48,7 @@ public class UserLifecycleTest {
         updatedFirstName = DataGenerator.generateUpdatedFirstName();
         updatedLastName = DataGenerator.generateUpdatedLastName();
         updatedEmail = DataGenerator.generateUpdatedEmail();
+
     }
 
     @Test(priority = 1)
