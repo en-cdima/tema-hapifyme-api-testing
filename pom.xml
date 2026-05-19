@@ -15,7 +15,7 @@
     <restassured.version>5.4.0</restassured.version>
     <testng.version>7.9.0</testng.version>
     <jackson.version>2.16.0</jackson.version>
-    <awaitility.version>4.2.1</awaitility.version>
+    <awaitility.version>4.2.0</awaitility.version>
   </properties>
 
   <dependencies>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>org.awaitility</groupId>
       <artifactId>awaitility</artifactId>
-      <version>4.2.0</version>
+      <version>${awaitility.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

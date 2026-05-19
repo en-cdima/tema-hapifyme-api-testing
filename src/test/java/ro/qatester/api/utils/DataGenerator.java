@@ -23,4 +23,16 @@ public class DataGenerator {
     public static long getTimestamp() {
         return timestamp;
     }
+
+    public static String generateUpdatedEmail() {
+        return "updated_" + timestamp + "@gmail.com";
+    }
+
+    public static String generateUpdatedFirstName() {
+        return "Updated_" + generateFirstName();
+    }
+
+    public static String generateUpdatedLastName() {
+        return "Updated_" + generateLastName();
+    }
 }

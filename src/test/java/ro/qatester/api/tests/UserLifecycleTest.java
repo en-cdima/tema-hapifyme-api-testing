@@ -39,9 +39,9 @@ public class UserLifecycleTest {
         lastName = DataGenerator.generateLastName();
         email = DataGenerator.generateEmail();
         password = DataGenerator.generatePassword();
-        updatedFirstName = "UpdatedCorneliu";
-        updatedLastName = "UpdatedDima";
-        updatedEmail = "test_updated" + DataGenerator.getTimestamp() + "@gmail.com";
+        updatedFirstName = DataGenerator.generateUpdatedFirstName();
+        updatedLastName = DataGenerator.generateUpdatedLastName();
+        updatedEmail = DataGenerator.generateUpdatedEmail();
     }
 
     @Test(priority = 1)
