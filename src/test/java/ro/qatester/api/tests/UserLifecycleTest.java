@@ -67,11 +67,9 @@ public class UserLifecycleTest {
                 given()
                         .contentType(ContentType.JSON)
                         .body(registerRequest)
-                        .log().all()
-
+                        .log().ifValidationFails()
                         .when()
                         .post("/user/register.php")
-
                         .then()
                         .log().body()
                         .statusCode(201)
@@ -123,7 +121,7 @@ public class UserLifecycleTest {
                 given()
                         .contentType(ContentType.JSON)
                         .body(loginRequest)
-                        .log().all()
+                        .log().ifValidationFails()
                         .when()
                         .post("/user/login.php")
                         .then()
