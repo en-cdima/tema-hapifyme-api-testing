@@ -9,7 +9,6 @@ import ro.qatester.api.utils.ApiPoller;
 import ro.qatester.api.utils.DataGenerator;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.*;
 
@@ -96,7 +95,7 @@ public class UserLifecycleTest {
     }
 
     @Test(priority = 2)
-    public void shouldConfirmUserEmailSuccessfully() throws InterruptedException {
+    public void shouldConfirmUserEmailSuccessfully() {
 
         assertNotNull(confirmationToken, "Confirmation token must be available before confirmation.");
 
