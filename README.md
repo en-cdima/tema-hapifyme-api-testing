@@ -31,7 +31,7 @@ The pipeline performs the following actions:
 
 Pipeline execution status:
 
-![Jenkins Pipeline Success](docs/Jenkins Successul Output.png)
+![Jenkins Pipeline Success](docs/Jekins%20Successful%20Output.jpg)
 
 The pipeline completed successfully with all tests passing.
 
