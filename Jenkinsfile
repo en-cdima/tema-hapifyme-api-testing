@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven'
-        jdk 'JDK'
-    }
-
     environment {
         TEST_PASSWORD = credentials('TEST_PASSWORD')
     }
