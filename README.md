@@ -70,3 +70,21 @@ with the following response body:
 
 The automated test suite was adapted to validate the actual behavior of the HapifyMe API implementation.
 
+## Test Reports
+
+### GitHub Actions Execution
+
+The GitHub Actions workflow uploads the Maven Surefire reports as workflow artifacts after every pipeline execution.
+
+Reports can be downloaded from:
+
+```txt
+GitHub Repository
+→ Actions
+→ HapifyMe API Tests
+→ Select Workflow Run
+→ Artifacts
+→ surefire-reports
+```
+
+This allows test execution evidence to be preserved even though the GitHub runner is destroyed after the workflow completes.
